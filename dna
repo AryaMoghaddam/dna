@@ -9,9 +9,13 @@ def main()
         exit(1)
         
     #openning the file
-    with open(argv[1], "r") as peoplefile:
+     with open(argv[1], "r") as peoplefile:
         reader = list(csv.reader(peoplefile))
         reader[0].remove"name"
         i = reader[0]
+    
+    with open(argv[2], "r")  as sequence:
+        dna = sequence.read  
+    
 
     
